@@ -1,0 +1,100 @@
+/* Сброс стандартных отступов и полей для всех элементов */
+*{
+  margin: 0;
+  padding: 1px; /* Минимальный внутренний отступ для всех элементов */
+  box-sizing: border-box; /* Размеры включают padding и border */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Основной шрифт */
+}
+
+/* Стили для всего документа */
+body { 
+    display: flex;
+    justify-content: center; /* Горизонтальное выравнивание по центру */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    height: 100vh; /* Полная высота окна просмотра */
+    background: #5a5959; /* Серый фон */
+}
+
+/* Контейнер калькулятора */
+.calculatorbody {
+    width: 300px; /* Фиксированная ширина */
+    background: rgb(84, 198, 233); /* Голубой фон */
+    border: 2px solid #000; /* Черная рамка */
+    border-radius: 12px; /* Закругленные углы */
+    box-shadow: 0px -4px 0px 0px rgba(32, 33, 95, 0.877) inset; /* Тень  */ 
+    padding: 20px; /* Внутренние отступы */
+    gap: 4px; /* Расстояние между дочерними элементами */
+}
+
+/* Контейнер дисплея и кнопки сброса */
+.tablo {
+    display: flex;
+    align-items: center; /* Вертикальное выравнивание элементов */
+    margin-bottom: 4px; /* Отступ снизу */
+    gap: 10px; /* Расстояние между элементами */
+}
+
+/* Поле ввода/вывода */
+#display {
+    text-align: right; /* Текст справа */
+    width: 72%; /* Ширина */
+    height: 40px; /* Высота */
+    font-size: 24px; /* Размер шрифта */
+    background: rgb(39, 134, 141); /* Цвет фона */
+    padding: 8px; /* Внутренние отступы */
+    border-radius: 8px; /* Закругленные углы */
+}
+
+/* Базовые стили кнопок */
+.btn {
+    width: 55px; /* Фиксированная ширина */
+    height: 40px; /* Фиксированная высота */
+    border-radius: 10%; /* Закругленные углы */
+    text-align: center; /* Центрирование текста */
+    line-height: 20px; /* Высота строки */
+    cursor: pointer; /* Курсор-указатель */
+    user-select: none; /* Запрет выделения текста */
+    box-shadow: 0px -4px 0px 0px rgba(32, 33, 95, 0.877) inset; /* Тень  */ 
+}
+/* Эффекты при наведении и нажатии */
+.btn:hover {
+    filter: brightness(150%);
+}
+
+.btn:active {
+    filter: brightness(80%);
+}
+
+/* Сетка кнопок */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+    gap: 2px; /* Расстояние между кнопками */
+    height: 100%; /* Занимает всю доступную высоту */
+    justify-content: center; /* Горизонтальное выравнивание */
+    align-items: center; /* Вертикальное выравнивание */
+}
+
+/* Цветовые модификаторы кнопок */
+.btn.bg-red {
+    background: red; /* Цвет фона */
+    color: white; /* Цвет текста */
+    align-self: flex-start; /* Выравнивание по началу контейнера */
+    width: 55px; /* Ширина */
+} 
+
+.btn.bg-white {
+    background: white; /* Цвет фона */
+    color: #000; /* Цвет текста */
+}
+
+.btn.bg-green {
+    background: green; /* Цвет фона */
+    color: #000; /* Цвет текста */
+}
+
+.btn.bg-pink {
+    background: pink; /* Цвет фона */ 
+    color: #000; /* Цвет текста */
+}
+

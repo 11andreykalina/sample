@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+   <!-- Основной контейнер калькулятора -->
+    <div class="calculatorbody">
+      <!-- Блок дисплея и кнопки сброса -->
+        <div class="tablo">
+            <!-- Кнопка очистки -->
+            <button class="btn clear bg-red">C</button>
+            <!-- Поле вывода данных -->
+            <input type="text" id="display" value="0" readonly>
+
+        </div>
+        
+          <!-- Сетка кнопок -->
+          <div class="buttons">
+    
+            <!-- Ряд 1 -->
+            <button class="btn seven number bg-white">7</button>
+            <button class="btn eight number bg-white">8</button>
+            <button class="btn nine number bg-white">9</button>
+            <button class="btn sum operator bg-pink">+</button>
+            <!-- Ряд 2 -->
+            <button class="btn four number bg-white">4</button>
+            <button class="btn five number bg-white">5</button>
+            <button class="btn six number bg-white">6</button>
+            <button class="btn substract operator bg-pink">-</button>
+            <!-- Ряд 3 -->
+            <button class="btn one number bg-white">1</button>
+            <button class="btn two number bg-white">2</button>
+            <button class="btn three number bg-white">3</button>
+            <button class="btn division operator bg-pink">/</button>
+            <!-- Ряд 4 -->
+            <button class="btn zero number bg-white">0</button>
+            <button class="btn point symbol bg-white">.</button>
+            <button class="btn equal bg-green">=</button>
+            <button class="btn multiply operator bg-pink">х</button>
+
+          </div>
+
+
+            
+        </div>
+    </div>
+
+</body>
+
+</html>
